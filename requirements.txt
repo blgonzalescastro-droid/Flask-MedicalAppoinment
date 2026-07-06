@@ -1,0 +1,12 @@
+Flask
+Flask-SQLAlchemy
+Flask-Migrate
+python-dotenv
+psycopg2-binary
+flask-jwt-extended
+flask-restful
+pydantic[email]
+bcrypt
+cryptography
+cloudinary
+requests
