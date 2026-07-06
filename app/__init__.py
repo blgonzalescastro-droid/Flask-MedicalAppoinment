@@ -18,3 +18,5 @@ from app.models import (
     specialty_model,
     user_model
 )
+
+from app import router
