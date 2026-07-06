@@ -1,0 +1,19 @@
+meta {
+  name: Update Doctor
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://127.0.0.1:5000/api/v1/doctors/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Dr. Carlos Ramirez",
+    "image": "https://example.com/image2.jpg",
+    "speciality_id": 1
+  }
+}

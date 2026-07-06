@@ -11,3 +11,4 @@ cryptography
 cloudinary
 requests
 datetime
+flasgger

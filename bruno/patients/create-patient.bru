@@ -1,0 +1,19 @@
+meta {
+  name: Create Patient
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://127.0.0.1:5000/api/v1/patients
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "document_number": "12345678",
+    "address": "Av. Siempre Viva 123",
+    "user_id": 4
+  }
+}

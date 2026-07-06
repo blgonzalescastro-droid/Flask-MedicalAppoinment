@@ -1,0 +1,24 @@
+meta {
+  name: Login
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://127.0.0.1:5000/api/v1/auth/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "juan.perez@test.com",
+    "password": "123456"
+  }
+}
+
+script:post-response {
+  if (res.body.access) {
+    bru.setVar("access_token", res.body.access);
+  }
+}
