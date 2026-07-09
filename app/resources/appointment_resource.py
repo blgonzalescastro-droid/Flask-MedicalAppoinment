@@ -42,16 +42,16 @@ class AppointmentResource(Resource):
             description: El médico ya tiene una cita agendada en ese horario
         """
         try:
-            # 1. Obtener la identidad cifrada desde el JWT y desencriptarla
+            
             hashed_id = get_jwt_identity()
             crypto = CryptoHelper()
-            user_id = crypto.decrypt(hashed_id) # Convierte el hash de vuelta al ID entero de la BD
+            user_id = crypto.decrypt(hashed_id) 
 
-            # 2. Validar el cuerpo del JSON enviado por el cliente
+            
             data = request.get_json()
             validated_data = AppointmentCreateSchema.model_validate(data)
 
-            # 3. Delegar la lógica de negocio al servicio de turnos
+            
             result, status_code = AppointmentService.create_appointment(user_id, validated_data)
             return result, status_code
 

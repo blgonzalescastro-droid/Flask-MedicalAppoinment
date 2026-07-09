@@ -20,7 +20,7 @@ class SpecialtyListResource(Resource):
             description: Error interno
         """
         try:
-            # Público para que los pacientes busquen especialidades
+            
             specialties = SpecialtyService.get_all_specialties()
             return [s.to_json() for s in specialties], 200
         except Exception as e:

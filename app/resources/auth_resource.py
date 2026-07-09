@@ -1,4 +1,4 @@
-# Endpoints de autenticacion: login, registro y generacion de tokens JWT.
+
 from flask_restful import Resource
 from flask import request
 from pydantic import ValidationError

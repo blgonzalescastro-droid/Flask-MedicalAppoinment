@@ -1,4 +1,4 @@
-# Servicio con operaciones de médicos: listado, creacion, actualizacion y baja logica.
+
 from app.models.doctor_model import Doctor
 from app.schemas.doctor_schema import DoctorCreateSchema, DoctorUpdateSchema
 from db import db

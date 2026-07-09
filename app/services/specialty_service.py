@@ -1,4 +1,4 @@
-# Servicio con operaciones de especialidades: listado, creación y baja lógica.
+
 from app.models.specialty_model import Specialty
 from app.schemas.specialty_schema import SpecialtyCreateSchema
 from db import db

@@ -1,4 +1,4 @@
-# Servicio con operaciones de citas médicas: reserva, búsquedas y lógica de negocio.
+
 from app.models.appointment_model import Appointment
 from app.schemas.appointment_schema import AppointmentCreateSchema
 from db import db

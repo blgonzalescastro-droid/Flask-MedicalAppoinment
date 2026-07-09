@@ -1,4 +1,4 @@
-# Servicio con operaciones de usuarios: búsqueda, creación y validación.
+
 from app.models.user_model import User
 from app.schemas.auth_schema import RegisterSchema
 from db import db

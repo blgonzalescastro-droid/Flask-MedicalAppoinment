@@ -1,4 +1,4 @@
-# Servicio con operaciones de pacientes: búsqueda, creación y listados.
+
 from app.models.patient_model import Patient
 from app.models.user_model import User
 from app.schemas.patient_schema import PatientCreateSchema
